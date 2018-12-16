@@ -7,9 +7,15 @@
 
 import os
 class Path1:
-    #获取当前py文件所在目录
+    def __init__(self):
+        pass
+
     def path(self):
-        dir =os.path.abspath(os.path.dirname(__file__))
+        """
+        #获取当前py文件所在目录
+        :return:
+        """
+        dir =os.path.abspath(os.path.dirname(__file__)) #\   /
         return dir
     #读取同级目录下的txt文件内容 mode:r
     def read_txt(self,filename):
@@ -31,7 +37,7 @@ class Path1:
             wr.write(str)
     #以追加模式对之前文件进行 写入 mode:a+
     def add_write_text(self,filename,str):
-        with open(self.path() + "./../config/" + filename,"a+",encoding="utf-8") as zx:
+        with open(self.path() + "./../config/"+filename,mode="a+",encoding="utf-8") as zx:
             zx.write(str)
     #以二进制重新打开一个文件 之后开始从开头写入内容 即会删除原有的内容 mode:wb
     def delete_write_text(self,filename,str):
@@ -60,3 +66,4 @@ print(p.read_txt("2.txt"))
 
 
 #pyquery 选择器模式
+

@@ -1,0 +1,81 @@
+文件名（ReadConfig）
+    主作用（文件名同名）
+    
+
+path1 =Path1()
+path1.path()
+Path().path() ==self.path()
+
+类加载-类初始化
+
+B.py
+
+"""
+
+"""
+
+__author__ =["b"]
+
+class A():
+
+	def a():
+		print("A")
+
+Class B():
+	def a(self):
+		print("B")
+	
+	def b(self):
+		self.a()
+		print("end")
+
+from 路径文件 import 类
+
+模块 run.py /文件 main()/类/方法
+
+class JoinFile 的构造方法+逻辑函数 开1个新的文件写
+__init__(self,flag=True,Text="")
+flag = os.path.exists(config文件夹) 是否存在
+if flag:	
+    pass
+else:
+    os.mkdirs(os.path.join(config+Text))  #输出是cofig1 文件夹
+
+var i int 
+
+a =10
+a ="str"
+
+import tkinter
+root = tkinter.Tk()
+root.title('BackUp')
+root.geometry("800x600")
+#第一行的两个控件  
+lbl_source = tkinter.Label(root, text='Source')
+lbl_source.grid(row=0, column=0)
+entry_source = tkinter.Entry(root)
+entry_source.grid(row=0,column=1)
+#第二行的两个控件
+lbl_target = tkinter.Label(root, text='Target')
+lbl_target.grid(row=1, column=0)
+entry_target = tkinter.Entry(root)
+entry_target.grid(row=1,column=1)
+#第三行的一个按钮控件
+but_back = tkinter.Button(root,text='BackUp')
+but_back.grid(row=3, column=0)
+but_back["command"] = backup
+
+
+#界面的开始
+root.mainloop()
+
+
+
+
+
+
+
+
+
+
+
