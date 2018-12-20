@@ -6,6 +6,11 @@ wb=webdriver.Chrome(executable_path="E:\Gitproject\Project\chromedriver.exe")
 
 class TkWin():
     def __init__(self,title,size):
+        """
+        对创建窗口的2个参数进行初始化
+        :param title:
+        :param size:
+        """
         self.title = title
         self.size = size
 
@@ -24,6 +29,10 @@ class TkWin():
     #     return today_dir
 
     def build_windows(self):
+        """
+        创建工具窗口
+        :return:
+        """
         global entry_url
         global entry_content
         global root
@@ -57,17 +66,29 @@ class TkWin():
         root.mainloop()
 
     def open_window(self):
+        """
+        获取用户输入url 并调起 打开百度
+        :return:
+        """
         url=entry_url.get()
         wb.get(url)
         pass
 
     def open_window_handle(self):
+        """
+        获取用户输入 进行搜索
+        :return:
+        """
         content=entry_content.get()
         wb.find_element_by_id("kw").send_keys(content)
         wb.find_element_by_id("su").clear()
         pass
 
     def quit_window(self):
+        """
+        关闭工具和浏览器
+        :return:
+        """
         root.quit()
         wb.close()
         pass
