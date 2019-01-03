@@ -3,6 +3,9 @@ from selenium import webdriver
 
 wb=webdriver.Chrome(executable_path="E:\Gitproject\Project\chromedriver.exe")
 
+#默认广告书
+ads_num_require=8
+
 
 class TkWin():
     def __init__(self,title,size):
@@ -82,6 +85,11 @@ class TkWin():
         content=entry_content.get()
         wb.find_element_by_id("kw").send_keys(content)
         wb.find_element_by_id("su").clear()
+        pass
+
+
+    def get__all__advert(self):
+        all_adv_li=wb.find_element_by_css_selector('#e_idea_pp li')
         pass
 
     def quit_window(self):
