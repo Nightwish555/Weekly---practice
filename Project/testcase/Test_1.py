@@ -37,8 +37,6 @@ class Test_1:
         check_dir1("new")
         check_dir1("old")
 
-
-
     def md5_get(self,filename):
         """
         获取文件的md5，并返回一个值
