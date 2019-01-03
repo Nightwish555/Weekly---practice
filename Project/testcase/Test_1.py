@@ -56,14 +56,18 @@ class Test_1:
         :param filename:
         :return:
         """
-        m1=self.md5_get(r'E:/Gitproject/Project'+ os.sep + filename +os.sep+ 'new/1.html')
-        m2=self.md5_get(r'E:/Gitproject/Project'+ os.sep + filename + os.sep+ 'old/1.html')
-        if m1==m2:
-            os.remove(r'E:/Gitproject/Project'+ os.sep + filename +os.sep+ 'new/1.html')
+        if os.path.exists(r'E:/Gitproject/Project'+ os.sep + filename +os.sep+ 'new/1.html'):
+            m1 = self.md5_get(r'E:/Gitproject/Project' + os.sep + filename + os.sep + 'new/1.html')
+            m2 = self.md5_get(r'E:/Gitproject/Project' + os.sep + filename + os.sep + 'old/1.html')
+            if m1==m2:
+                os.remove(r'E:/Gitproject/Project'+ os.sep + filename +os.sep+ 'new/1.html')
+            else:
+                shutil.move(r'E:/Gitproject/Project'+ os.sep + filename +os.sep+ 'new/1.html','E:\Gitproject\Project\Aew_html')
         else:
-            shutil.move(r'E:/Gitproject/Project'+ os.sep + filename +os.sep+ 'new/1.html','E:\Gitproject\Project\Aew_html')
-
+            print(".html已对比过")
 T=Test_1()
-T.build_dir("C")
-T.build_dir("java")
+
+
+
+
 
