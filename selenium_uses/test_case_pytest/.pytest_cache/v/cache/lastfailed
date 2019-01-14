@@ -1,0 +1,10 @@
+{
+  "test_Indexweb.py::TestIndexWeb::()::test_index_checklogin": true,
+  "test_Indexweb.py::TestIndexWeb::()::test_login_step1": true,
+  "test_Indexweb.py::TestIndexWeb::()::test_login_step1[\\u767b\\u5f55\\u9996\\u9875]": true,
+  "test_Indexweb.py::TestIndexWeb::()::test_login_step1[passport.ctrip.com/user/login]": true,
+  "test_Indexweb.py::TestIndexWeb::()::test_login_step2": true,
+  "test_Indexweb.py::TestIndexWeb::test_a_one": true,
+  "test_Indexweb.py::TestIndexWeb::test_login_step2": true,
+  "test_no_action.py::test_1": true
+}
