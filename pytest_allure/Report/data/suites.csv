@@ -1,0 +1,3 @@
+"Status","Name","Duration in ms","Description"
+"failed","test_case_pytest.test_main.Test_main#test_b","2",""
+"passed","test_case_pytest.test_main.Test_main#test_a","0",""

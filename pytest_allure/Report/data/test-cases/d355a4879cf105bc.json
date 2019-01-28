@@ -1,0 +1,91 @@
+{
+  "uid" : "d355a4879cf105bc",
+  "name" : "test_a",
+  "fullName" : "test_case_pytest.test_main.Test_main#test_a",
+  "historyId" : "2c702a93e24ea6fa30a176a5a2c557cd",
+  "time" : {
+    "start" : 1548681430705,
+    "stop" : 1548681430705,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7d7d5e3d596df15d",
+      "name" : "log",
+      "source" : "7d7d5e3d596df15d.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "46335638e37066c6",
+      "name" : "stdout",
+      "source" : "46335638e37066c6.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "3d8109c443515b49",
+      "name" : "stderr",
+      "source" : "3d8109c443515b49.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case_pytest"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_main"
+  }, {
+    "name" : "host",
+    "value" : "admin"
+  }, {
+    "name" : "thread",
+    "value" : "9028-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case_pytest.test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a20a3bbaa2afabac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1548681293466,
+        "stop" : 1548681293467,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d355a4879cf105bc.json",
+  "parameterValues" : [ ]
+}

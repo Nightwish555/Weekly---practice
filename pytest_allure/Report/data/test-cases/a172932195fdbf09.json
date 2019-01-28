@@ -1,0 +1,85 @@
+{
+  "uid" : "a172932195fdbf09",
+  "name" : "test_b",
+  "fullName" : "test_case_pytest.test_main.Test_main#test_b",
+  "historyId" : "2a7aea8402509f29d9693222889dc530",
+  "time" : {
+    "start" : 1548681293471,
+    "stop" : 1548681293473,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 4 == 3\n  -4\n  +3",
+  "statusTrace" : "self = <test_case_pytest.test_main.Test_main object at 0x000000EB29C391D0>\n\n    def test_b(self):\n        # try:\n        B = comd.jian()\n>       assert 4 == B\nE       assert 4 == 3\nE         -4\nE         +3\n\ntest_case_pytest\\test_main.py:21: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 4 == 3\n  -4\n  +3",
+    "statusTrace" : "self = <test_case_pytest.test_main.Test_main object at 0x000000EB29C391D0>\n\n    def test_b(self):\n        # try:\n        B = comd.jian()\n>       assert 4 == B\nE       assert 4 == 3\nE         -4\nE         +3\n\ntest_case_pytest\\test_main.py:21: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9c497b8ac952e5e4",
+      "name" : "log",
+      "source" : "9c497b8ac952e5e4.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "71f93f2c3d2f1e18",
+      "name" : "stdout",
+      "source" : "71f93f2c3d2f1e18.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "26bd7aa43dcbc541",
+      "name" : "stderr",
+      "source" : "26bd7aa43dcbc541.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case_pytest"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_main"
+  }, {
+    "name" : "host",
+    "value" : "admin"
+  }, {
+    "name" : "thread",
+    "value" : "4016-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case_pytest.test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a172932195fdbf09.json",
+  "parameterValues" : [ ]
+}
