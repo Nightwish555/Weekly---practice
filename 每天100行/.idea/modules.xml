@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://G:/Program Files/selenium_user-master/.idea/selenium_user-master.iml" filepath="G:/Program Files/selenium_user-master/.idea/selenium_user-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/每天100行.iml" filepath="$PROJECT_DIR$/.idea/每天100行.iml" />
     </modules>
   </component>
