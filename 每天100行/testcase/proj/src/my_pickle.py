@@ -1,6 +1,5 @@
 __title__="处理文件类"
 
-import json
 import pickle
 import os,time
 class My_pickle():
@@ -18,12 +17,14 @@ class My_pickle():
         :param data:
         :return:
         """
-        with open(self.filename,"ab",encoding="utf-8") as f:
-            json.dump(data,f)
+        with open(self.filename,"ab") as f:
+            pickle.dump(data,f)
 
     def read(self):
         """
-        读取文件函数 pickle 模块第一见 第2天继续学习
+        读取文件函数 pickle 模块第一见 pickle与json 一样都是正反序列化
+        但是pickle只能在python内使用 且不同版本python不兼容
+        而json可以在不同语言之间交互 且效率更高
         :return:
         """
         with open(self.filename, "rb") as f:
@@ -36,7 +37,7 @@ class My_pickle():
     def delete(self,name):
         """
         删除文件函数  .bak备份文件,为文件格式扩展名
-        :param name:
+        :param name:指定name 进行删除
         :return:
         """
         f2 = My_pickle(self.filename + ".bak")  # 新建一个文件
