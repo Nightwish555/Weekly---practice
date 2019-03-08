@@ -1,5 +1,5 @@
 __author__="Nightwish"
-__title__="3-6"
+__title__="3-8"
 
 import os
 import time
@@ -38,7 +38,7 @@ class MySQL():
 
     def save(self):
         """
-        将对象序列化到文件中 这段代码有问题
+        将对象序列化到文件中
         """
         if not os.path.isfile(os.path.join(set.DB_PATH, str(self.id))):  # 判断文件是否存在
             with open(os.path.join(set.DB_PATH, str(self.id)), "wb") as f:
@@ -62,7 +62,7 @@ class MySQL():
 # mysql1.save()
 # mysql.get_obj_by_id(1528189434)
 
-#这段代码有问题 必须自行修改
+#更改 用json序列化 数据
 
 
 
@@ -88,21 +88,47 @@ class MySQL():
 # add_item 1004,10
 # add_item 1005,10
 s="add_item {{1001 to 1003}},10"
-
-# 卡住了目前思路是用正则做
-def check_cmd(str):
-    if re.match("add_item",str).span():
-        print(1)
-        return True
-
-    else:
-        print(2)
-        return False
-
-check_cmd(s)
+p1=r"{{.+}}"
+pattern1=re.compile(p1)
+mattern=re.search(pattern1,s)
 
 
+prop_cmd=input("道具命令:").strip()
+id_cmd=input("道具id:").strip()
+num_cmd=input("数量:").strip()
 
+class check_cmd():
+    t="to"
+    n="not"
+    d=","
+    def check(self):
+        if prop_cmd=="add_item":
+            pass
+        else:
+            print("命令不合法")
+        pass
+
+
+    def check_id_t(self):
+        if self.t in check_cmd:
+            id_cmd_t=id_cmd.split(self.t)
+            for i in range(int(id_cmd_t[0]),int(id_cmd_t[1])+1):
+                L=[]
+                L.append(i)
+        return L
+
+    def check_id_d(self):
+        if self.d in check_cmd:
+            id_cmd_d = id_cmd.split(self.d)
+            for i in id_cmd_d:
+                L=[]
+                L.append(int(i))
+
+    def handle(self):
+        pass
+
+s="1001 to 1003 not 1002,1003"
+s_=re.split(r"to|not",s)
 
 
 
