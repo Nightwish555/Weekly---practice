@@ -28,7 +28,7 @@ class adb_install:
 
     def adb_install(self):
         for i in apk_list:
-            os.system('adb install -r' + i)
+            os.system('adb install -r' +i)
 
 
 if __name__ == '__main__':
