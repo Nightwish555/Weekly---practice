@@ -7,15 +7,12 @@ class Pages(object):
     """
     Page 基类 所有page都该继承该类
     """
-    def __init__(self,driver,base_url=u"https//www,baidu.com"):
+    def __init__(self,base_url):
         """
         类实例函数
-        :param driver:浏览器驱动
-        :param base_url:打开url
+        :param base_url:目标url
         """
         self.base_url=base_url
-        self.driver=driver
-        self.time=50
 
     def find_element(self,*loc):
         """
