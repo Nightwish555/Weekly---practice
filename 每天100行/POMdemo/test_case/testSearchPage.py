@@ -4,11 +4,11 @@ __title__="Pytest测试类"
 import pytest
 import os,time
 
-from POMdemo.pages.searchPage import SearchPage
+from POMdemo.pages.cmdPage import CmdPage
 
 url_base=r"https://www.baidu.com"
 
-sea=SearchPage(url_base)
+sea=CmdPage(url_base)
 
 class TestSearchPage():
     def setup_class(self):
@@ -19,7 +19,7 @@ class TestSearchPage():
         sea.quit_url()
 
     def test_goto_url(self):
-        sea.gotoBaidu()
+        sea.goto_url()
     def test_write_text(self):
         sea.input_search_text("游民星空")
 

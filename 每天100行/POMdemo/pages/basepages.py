@@ -16,7 +16,7 @@ class Pages(object):
 
     def find_element(self,*loc):
         """
-        重写原有的方法
+        寻找元素
         :param loc:
         :return:
         """
@@ -24,7 +24,7 @@ class Pages(object):
 
     def input_text(self,loc,text):
         """
-        重写文本方法
+        文本方法
         :param loc:
         :param text: 文本内容
         :return:
@@ -33,18 +33,19 @@ class Pages(object):
 
     def click(self,loc):
         """
-        重写点击方法
+        点击方法
         :param loc:
         :return:
         """
         self.find_element(*loc).click()
 
-    def get_title(self):
+    def F5(self):
         """
-        重写得到网页标题的方法
+        刷新网页
         :return:
         """
-        return self.driver.title
+        return self.driver.refresh()
+
     def quit(self):
         """
         关闭网页
