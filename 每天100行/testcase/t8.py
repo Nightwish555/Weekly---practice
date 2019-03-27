@@ -48,7 +48,7 @@ class svn_tool():
     def svn_revert(self):
         subprocess.Popen(r'TortoiseProc.exe /command:revert '+'/path:'+trunk_folder+' /closeonend:0')
     def game_start(self):
-        os.startfile("trunk_client")
+        subprocess.Popen(trunk_client)
     def open_main(self):
         os.startfile(trunk_folder)
 

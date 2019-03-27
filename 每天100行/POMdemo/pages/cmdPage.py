@@ -47,6 +47,7 @@ class CmdPage(Pages):
         print(chromedriver)
         self.driver=webdriver.Chrome(chromedriver)
 
+
     def goto_url(self):
         """
         打开目标url函数
