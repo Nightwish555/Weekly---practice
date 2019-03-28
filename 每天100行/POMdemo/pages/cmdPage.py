@@ -31,10 +31,10 @@ class CmdPage(Pages):
     #配置文件类路径
     iniDir=set.current_path
     #百度搜索框
-    search_input=(By.ID,r"kw")
+    search_input=(id,r"kw")
 
     #百度一下按钮
-    search_btn=(By.ID,r"su")
+    search_btn=(id,r"su")
 
     def __init__(self,base_url):
         """

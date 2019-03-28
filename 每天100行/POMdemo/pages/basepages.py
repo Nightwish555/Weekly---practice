@@ -41,22 +41,46 @@ class Pages(object):
         :param loc:
         :return:
         """
-        TimeOut=20
-        try:
-            self.driver.implicitly_wait(TimeOut)  # 智能等待；超时设置
+        # TimeOut=20
+        # try:
+        #     self.driver.implicitly_wait(TimeOut)  # 智能等待；超时设置
+        #
+        #     element=self.driver.find_element(*loc) #如果element没有找到，到此处会开始等待
+        #     if self.isDisplayTimeOut(element, TimeOut):
+        #         self.hightlight(element)  # 高亮显示
+        #     else:
+        #         raise ElementNotVisibleException  # 抛出异常，给except捕获
+        #
+        #     self.driver.implicitly_wait(0) #恢复超时设置
+        #     return element
+        #
+        # except (NoSuchElementException, ElementNotVisibleException) as ex:
+        #     self.getImage
+        #     raise ex
 
-            element=self.driver.find_element(*loc) #如果element没有找到，到此处会开始等待
-            if self.isDisplayTimeOut(element, TimeOut):
-                self.hightlight(element)  # 高亮显示
-            else:
-                raise ElementNotVisibleException  # 抛出异常，给except捕获
-
-            self.driver.implicitly_wait(0) #恢复超时设置
-            return element
-
-        except (NoSuchElementException, ElementNotVisibleException) as ex:
-            self.getImage
-            raise ex
+        if ',' not in loc:
+            return self.driver.find_element_by_id(loc)
+        loc_id=loc.split(',')[0]
+        loc_value=loc.solit(',')[1]
+        if  loc_id=="i" or loc_id=="id":
+            element=self.driver.find_element_by_id(loc_value)
+        elif loc_id=="n" or loc_id=="name":
+            element=self.driver.find_element_by_name(loc_value)
+        elif loc_id=="cl" or loc_id=="class_name":
+            element=self.driver.find_element_by_class_name(loc_value)
+        elif loc_id=="t" or loc_id=="tag_name":
+            element=self.driver.find_element_by_tag_name(loc_value)
+        elif loc_id=="l" or loc_id=="link_text":
+            element=self.driver.find_element_by_link_text(loc_value)
+        elif loc_id=="p" or loc_id=="partial_link_text":
+            element=self.driver.find_element_by_partial_link_text(loc_value)
+        elif loc_id=="x" or loc_id=="xpath":
+            element=self.driver.find_element_by_xpath(loc_value)
+        elif loc_id=="cs" or loc_id=="css_selector":
+            element=self.driver.find_element_by_css_selector(loc_value)
+        else:
+            raise NameError("Please enter a valid type of targeting elements.")
+        return element
 
 
     def hightlight(self, element):
@@ -76,6 +100,8 @@ class Pages(object):
         :return:
         """
         self.find_element(*loc).send_keys(text)
+
+
 
     def click(self,loc):
         """

@@ -58,7 +58,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/POMdemo/pages/basepages.py" beforeDir="false" afterPath="$PROJECT_DIR$/POMdemo/pages/basepages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/POMdemo/pages/cmdPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/POMdemo/pages/cmdPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/t8.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/t8.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,11 +115,12 @@
           <entry key="project.open.time.38" value="2" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.43" value="2" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.52" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -128,7 +128,7 @@
           <entry key="html" value="3" />
           <entry key="ini" value="5" />
           <entry key="json" value="5" />
-          <entry key="py" value="94" />
+          <entry key="py" value="96" />
           <entry key="pyi" value="1" />
           <entry key="sql" value="1" />
           <entry key="teacher_info" value="3" />
@@ -142,7 +142,7 @@
           <entry key="Ini" value="5" />
           <entry key="JSON" value="5" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="94" />
+          <entry key="Python" value="96" />
           <entry key="PythonStub" value="1" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="1" />
@@ -154,7 +154,7 @@
           <entry key="html" value="794" />
           <entry key="ini" value="73" />
           <entry key="json" value="9" />
-          <entry key="py" value="13244" />
+          <entry key="py" value="13901" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -163,7 +163,7 @@
           <entry key="Ini" value="73" />
           <entry key="JSON" value="9" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="13244" />
+          <entry key="Python" value="13901" />
         </counts>
       </usages-collector>
     </session>
@@ -173,15 +173,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/t2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase/t5.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -213,21 +204,21 @@
         <entry file="file://$PROJECT_DIR$/testcase/t8.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/POMdemo/pages/basepages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+            <state relative-caret-position="175">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="e#58#88#0" expanded="true" />
-                <marker date="1553696653977" expanded="true" signature="2013:2018" ph="..." />
-                <marker date="1553696653977" expanded="true" signature="2312:2317" ph="..." />
-                <marker date="1553696653977" expanded="true" signature="2332:2341" ph="..." />
+                <marker date="1553780424099" expanded="true" signature="3293:3298" ph="..." />
+                <marker date="1553780424099" expanded="true" signature="3594:3599" ph="..." />
+                <marker date="1553780424099" expanded="true" signature="3614:3623" ph="..." />
               </folding>
             </state>
           </provider>
@@ -236,7 +227,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://G:/Program Files/selenium_user-master/util/command.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
+            <state relative-caret-position="7800">
               <caret line="322" column="8" selection-start-line="322" selection-start-column="8" selection-end-line="322" selection-end-column="8" />
               <folding>
                 <element signature="e#1#31#0" expanded="true" />
@@ -248,26 +239,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://G:/Program Files/selenium_user-master/test_case_pytest/test_Indexweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="3375">
               <caret line="142" column="75" selection-start-line="142" selection-start-column="68" selection-end-line="142" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/POMdemo/pages/cmdPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+            <state relative-caret-position="159">
+              <caret line="136" column="17" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
               <folding>
                 <element signature="e#42#85#0" expanded="true" />
-                <marker date="1553694073493" expanded="true" signature="1002:1162" ph="..." />
-                <marker date="1553694073493" expanded="true" signature="2000:2106" ph="..." />
-                <marker date="1553694073493" expanded="true" signature="2152:2157" ph="..." />
-                <marker date="1553694073493" expanded="true" signature="2681:2882" ph="..." />
+                <marker date="1553779384198" expanded="true" signature="996:1156" ph="..." />
+                <marker date="1553779384198" expanded="true" signature="1994:2100" ph="..." />
+                <marker date="1553779384198" expanded="true" signature="2146:2151" ph="..." />
+                <marker date="1553779384198" expanded="true" signature="2675:2876" ph="..." />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POMdemo/test_case/testSearchPage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POMdemo/pages/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -346,7 +351,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="348" />
     <option name="y" value="23" />
     <option name="width" value="1024" />
@@ -358,29 +363,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="每天100行" type="b2602c69:ProjectViewProjectNode" />
               <item name="每天100行" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每天100行" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每天100行" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每天100行" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每天100行" type="462c0819:PsiDirectoryNode" />
-              <item name="POMdemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每天100行" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每天100行" type="462c0819:PsiDirectoryNode" />
-              <item name="POMdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="每天100行" type="b2602c69:ProjectViewProjectNode" />
@@ -410,6 +398,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -622,7 +611,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.1785174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.18078668" />
       <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.25340393" />
       <window_info id="Favorites" order="2" sideWeight="0.5016611" side_tool="true" weight="0.25340393" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -786,9 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POMdemo/pages/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://G:/Program Files/selenium_user-master/test_case_pytest/test_cookies.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -820,13 +806,6 @@
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/POMdemo/test_case/testSearchPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/POMdemo/config/setting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -841,9 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5525">
           <caret line="225" column="11" selection-start-line="225" selection-start-column="11" selection-end-line="225" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -886,9 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3075">
           <caret line="124" column="24" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
-          <folding>
-            <element signature="e#190#209#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,9 +886,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/python3.6/Lib/site-packages/selenium/webdriver/support/wait.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python3.6/Lib/site-packages/selenium/webdriver/support/expected_conditions.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/python3.6/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-256">
+          <caret line="953" column="8" selection-start-line="953" selection-start-column="8" selection-end-line="953" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/t2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="2475">
           <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
         </state>
       </provider>
@@ -944,23 +934,13 @@
     <entry file="file://$PROJECT_DIR$/testcase/t8.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://E:/python3.6/Lib/site-packages/selenium/webdriver/support/wait.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/python3.6/Lib/site-packages/selenium/webdriver/support/expected_conditions.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://G:/Program Files/selenium_user-master/util/command.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="7800">
           <caret line="322" column="8" selection-start-line="322" selection-start-column="8" selection-end-line="322" selection-end-column="8" />
           <folding>
             <element signature="e#1#31#0" expanded="true" />
@@ -970,41 +950,44 @@
     </entry>
     <entry file="file://G:/Program Files/selenium_user-master/test_case_pytest/test_Indexweb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="3375">
           <caret line="142" column="75" selection-start-line="142" selection-start-column="68" selection-end-line="142" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/python3.6/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-256">
-          <caret line="953" column="8" selection-start-line="953" selection-start-column="8" selection-end-line="953" selection-end-column="8" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/POMdemo/pages/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/POMdemo/pages/cmdPage.py">
+    <entry file="file://$PROJECT_DIR$/POMdemo/test_case/testSearchPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
-          <folding>
-            <element signature="e#42#85#0" expanded="true" />
-            <marker date="1553694073493" expanded="true" signature="1002:1162" ph="..." />
-            <marker date="1553694073493" expanded="true" signature="2000:2106" ph="..." />
-            <marker date="1553694073493" expanded="true" signature="2152:2157" ph="..." />
-            <marker date="1553694073493" expanded="true" signature="2681:2882" ph="..." />
-          </folding>
+        <state relative-caret-position="275">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/POMdemo/pages/basepages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        <state relative-caret-position="175">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="e#58#88#0" expanded="true" />
-            <marker date="1553696653977" expanded="true" signature="2013:2018" ph="..." />
-            <marker date="1553696653977" expanded="true" signature="2312:2317" ph="..." />
-            <marker date="1553696653977" expanded="true" signature="2332:2341" ph="..." />
+            <marker date="1553780424099" expanded="true" signature="3293:3298" ph="..." />
+            <marker date="1553780424099" expanded="true" signature="3594:3599" ph="..." />
+            <marker date="1553780424099" expanded="true" signature="3614:3623" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POMdemo/pages/cmdPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="136" column="17" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
+          <folding>
+            <element signature="e#42#85#0" expanded="true" />
+            <marker date="1553779384198" expanded="true" signature="996:1156" ph="..." />
+            <marker date="1553779384198" expanded="true" signature="1994:2100" ph="..." />
+            <marker date="1553779384198" expanded="true" signature="2146:2151" ph="..." />
+            <marker date="1553779384198" expanded="true" signature="2675:2876" ph="..." />
           </folding>
         </state>
       </provider>
