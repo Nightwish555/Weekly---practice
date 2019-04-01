@@ -2,11 +2,15 @@ __author__="Nightwish"
 __title__="寻找元素类"
 
 from selenium.webdriver.common.by import By
-from POMdemo.pages.basepages import Pages
+from My_selenium_eg.pages.basepages import Pages
 from selenium import webdriver
-from POMdemo.config.setting import Setting
+from My_selenium_eg.config.setting import Setting
+from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import TimeoutException
+from My_selenium_eg.config.element import ELEMENT
 import configparser
 import os,datetime
+
 import time
 
 set=Setting()
@@ -30,11 +34,7 @@ class CmdPage(Pages):
 
     #配置文件类路径
     iniDir=set.current_path
-    #百度搜索框
-    search_input=(id,r"kw")
 
-    #百度一下按钮
-    search_btn=(id,r"su")
 
     def __init__(self,base_url):
         """
@@ -47,7 +47,6 @@ class CmdPage(Pages):
         print(chromedriver)
         self.driver=webdriver.Chrome(chromedriver)
 
-
     def goto_url(self):
         """
         打开目标url函数
@@ -55,41 +54,28 @@ class CmdPage(Pages):
         """
         print("打开首页:",self.base_url)
         self.driver.get(self.base_url)
+        self.driver.maximize_window()
         self.driver.implicitly_wait(30)
 
 
-    def input_search_text(self,text):
+    def _search_text(self,loc,text):
         """
         写入搜索的关键字
         :param text: 搜索内容
         :return:
         """
         print("输出搜索关键字:",text)
-        self.input_text(self.search_input,text)
+        self.input_text(loc,text)
 
-    def click_search_btn(self):
+    def click_search_btn(self,loc):
         """
         点击按钮
         :return:
         """
         print("点击 百度一下 按钮")
-        self.click(self.search_btn)
+        self.click(loc)
 
 
-    def get_format_time(self, flag=False):
-        """
-        根据falg布尔值切换显示时间
-        :param flag: True获得年月日
-        :return:
-        """
-        if flag:
-            return time.strftime("%Y%m%d")
-        else:
-            return time.strftime("%H%M%S")
-
-    def get_format_date(self):
-        now=datetime.datetime.now()
-        return "{0}-{1}-{2}".format(now.year,now.month,now.day)
 
     def get_ini_date(self,inifolder,section,item):
        """
@@ -145,3 +131,4 @@ class CmdPage(Pages):
         :return:
         """
         return self.driver.current_url
+

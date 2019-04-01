@@ -4,7 +4,8 @@ __title__="Pytest测试类"
 import pytest
 import os,time
 
-from POMdemo.pages.cmdPage import CmdPage
+from My_selenium_eg.pages.cmdPage import CmdPage
+from My_selenium_eg.config.element import ELEMENT
 
 url_base=r"https://www.baidu.com"
 
@@ -20,11 +21,14 @@ class TestSearchPage():
 
     def test_goto_url(self):
         sea.goto_url()
+
     def test_write_text(self):
-        sea.input_search_text("游民星空")
+        search_input=ELEMENT['百度文本框']
+        sea._search_text(search_input,"Dota2")
 
     def test_click(self):
-        sea.click_search_btn()
+        search_btn = ELEMENT['百度一下按钮']
+        sea.click_search_btn(search_btn)
 
 
 if __name__ == '__main__':
